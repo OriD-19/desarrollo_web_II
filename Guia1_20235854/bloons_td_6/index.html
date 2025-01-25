@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloons TD 6 - ¡Reviéntalos a todos!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'hero-image-right': "linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0,0,0,0)), url('./images/td6banner.webp')",
+                        'hero-image-bottom': "linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0)), url('./images/td6banner.webp')"
+                    },
+                    fontFamily: {
+                        title: ['Righteous', 'sans-serif'],
+                        text: ['Poppins', 'sans-serif']
+                    },
+                    colors: {
+                        "section-background": "rgba(234, 88, 12, 0.4)"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-black font-text">
+
+    <!-- Hero -->
+    <div class="flex flex-col-reverse md:flex-row min-h-screen">
+        <!-- Hero text -->
+        <div
+            class="flex flex-col text-white text-center md:p-4 md:w-1/2 md:text-left mx-12 md:m-12 md:mx-0 md:ml-12 items-center justify-center">
+            <h1 class="md:text-5xl text-4xl mb-8 font-title"><span class="text-orange-600 mb-4 block">Bloons Tower
+                    Defense 6</span>
+                El mejor juego de defensa de torres, ¡ahora con más globos!</h1>
+            <p class="font-extralight text-xl leading-9 sm:block hidden mb-4">
+                Explota millones de malvados globos con la ayuda de poderosos monos, listos para la batalla con decenas
+                y decenas de mejoras. Acompaña a tus torres con poderosos héroes
+                que comandarán el ataque y no retrocederán ante los más temibles globos.
+                ¡A defender la ciudad mono!
+            </p>
+            <!-- Button (call to action) -->
+            <button class="inline-block p-6 my-6 text-2xl md:text-4xl rounded-full shadow-lg bg-orange-600 
+            text-white duration-200 hover:opacity-80 w-full font-title mb-12">Jugar ahora</button>
+        </div>
+
+        <!-- Hero image -->
+        <div class="md:bg-hero-image-right bg-hero-image-bottom md:bg-center bg-top 
+        md:w-1/2 h-[80vh] md:h-auto bg-cover inline-block">
+        </div>
+    </div>
+
+    <!-- Description of the videogame -->
+    <div class="flex flex-col bg-section-background text-white p-12">
+
+        <h2 class="text-center text-4xl font-title text-orange-300 mb-8">¡Diversión sin límites!</h2>
+        <div class="flex flex-col md:flex-row md:space-x-12 space-y-12 md:space-y-0 justify-between py-12 md:p-6">
+
+            <!-- First desc -->
+            <div class="flex flex-col">
+                <div class="text-center">
+                    <div
+                        class="bg-[url('./images/screenshot_1.jpg')] w-full h-[300px] bg-cover bg-center mb-4 rounded-lg">
+                    </div>
+                    <h3 class="text-2xl font-title sm:mb-4">Destruye millones de globos</h3>
+                    <p class="hidden sm:block leading-7">Cada oleada pondrá a prueba tus habilidades como estratega.
+                        Planifica
+                        bien tu defensa,
+                        y no permitas que los malvados globos invadan tu territorio. ¡Protege tus bananas a toda costa!
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Second desc -->
+            <div class="flex flex-col">
+                <div class="text-center">
+                    <div
+                        class="bg-[url('./images/screenshot_2.webp')] w-auto h-[300px] bg-cover bg-center mb-4 rounded-lg">
+                    </div>
+                    <h2 class="text-2xl font-title sm:mb-4">Gestiona tus recursos</h2>
+                    <p class="hidden sm:block leading-7">Tienes una cantidad limitada de dinero. Los monos no se
+                        contratarán
+                        solos, ¿sabes?
+                        Consigue dinero reventando globos o produce tus propias bananas. Más dinero se traduce en
+                        mejores torres.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Third desc -->
+            <div class="flex flex-col">
+                <div class="text-center">
+                    <div
+                        class="bg-[url('./images/screenshot_3.png')] w-auto h-[300px] bg-cover bg-center mb-4 rounded-lg">
+                    </div>
+                    <h2 class="text-2xl font-title sm:mb-4">Combate contra temibles jefes</h2>
+                    <p class="hidden sm:block leading-7">Los globos son huesos duros de roer. O... ¿bananas difíciles de
+                        pelar?
+                        Algunas de las tropas más temibles del ejército enemigo pondrán a prueba tu ingenio y tu
+                        destreza.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Available gamemodes -->
+    <div class="text-white p-12">
+        <h2 class="text-center text-4xl font-title mb-12">Modos de juego</h2>
+
+        <!-- Grid container for the gamemodes -->
+        <div class="grid md:grid-cols-2 grid-cols-1 justify-items-center gap-8">
+
+            <!-- Cards for each gamemode -->
+            <div class="flex flex-col bg-slate-700 items-center justify-center rounded-xl p-12 min-w-full">
+                <img src="./images/regular_mode.png" alt="" class="w-2/3">
+                <h3 class="text-3xl font-title my-4 text-orange-600">Modo normal</h3>
+                <p class="text-xl text-center hidden sm:block">El modo clásico. La experiencia estándar de BTD6.
+                    Cuidado, podrías quedar adicto.</p>
+            </div>
+            <div class="flex flex-col bg-slate-700 items-center justify-center rounded-xl p-12">
+                <img src="./images/race_mode.jpg" alt="" class="w-2/3">
+                <h3 class="text-3xl font-title my-4 text-orange-600">Modo carrera</h3>
+                <p class="text-xl text-center hidden sm:block">Termina las rondas en la menor cantidad de tiempo
+                    posible. ¡Solo no te emociones!</p>
+            </div>
+            <div class="flex flex-col bg-slate-700 items-center justify-center rounded-xl p-12">
+                <img src="./images/coop_mode.jpg" alt="" class="w-2/3 rounded-full max-w-3xl">
+                <h3 class="text-3xl font-title my-4 text-orange-600">Modo cooperativo</h3>
+                <p class="text-xl text-center hidden sm:block">Juega con amigos para planificar una mejor estrategia.
+                    Cuatro monos piensan mejor que uno.</p>
+            </div>
+            <div class="flex flex-col bg-slate-700 items-center justify-center rounded-xl p-12">
+                <img src="./images/odyssey_mode.webp" alt="" class="w-2/3">
+                <h3 class="text-3xl font-title my-4 text-orange-600">Modo odisea</h3>
+                <p class="text-xl text-center hidden sm:block">Navega las aguas turbulentas, completa tu aventura y
+                    recibe muchos premios.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Presenting the heroes -->
+    <div class="flex flex-col text-white bg-section-background py-12 px-12 md:space-x-12 space-y-12 items-center">
+        <h2 class="text-4xl text-center font-title mb-16">Conoce a los héroes</h2>
+
+        <!-- Quincy -->
+        <div class="flex md:flex-row flex-col space-x-12 justify-center items-center max-w-[1100px]">
+            <img src="./images/quincy.webp" alt="Quincy, héroe arquero" class="w-full min-w-[300px]"> 
+            <div class="flex flex-col mx-12">
+                <h3 class="text-center md:text-left text-3xl text-orange-300 font-title mt-10 md:mt-0 mb-10">Quincy</h3> 
+                <p class="leading-8 md:text-xl text-lg hidden sm:block">Quincy es el héroe por excelencia. 
+                    Carismático y habilidoso, su puntería infalible es una de las características más temidas por los globos. 
+                    Haz que lluevan flechas por doquier mientras este héroe te lleva hacia la victoria.</p>
+            </div>
+        </div>
+
+        <hr class="border border-orange-300 rounded-full border-4 inline-block max-w-[1100px] w-full">
+
+        <!-- Gwen -->
+        <div class="flex md:flex-row-reverse flex-col md:space-x-12 md:space-y-0 justify-center items-center space-y-12 max-w-[1100px]">
+            <img src="./images/gwen.webp" alt="Gwendolin, heroína pirómana" class="w-full min-w-[300px]"> 
+            <div class="flex flex-col mx-12">
+                <h3 class="text-center md:text-left text-3xl text-orange-300 font-title mt-10 md:mt-0 mb-10">Gwendolin</h3> 
+                <p class="leading-8 md:text-xl text-lg hidden sm:block">
+                    ¿Qué es mejor que un globo reventado? ¡Un globo quemado! O, al menos, algo así diría Gwendolin.
+                    Su poder abrasador hará temblar hasta al más resistente de los globos, añadiendo un característico
+                    olor al campo de batalla que levantará la moral del resto de tus torres.
+                </p>
+            </div>
+        </div>
+
+        <hr class="border border-orange-300 rounded-full border-4 inline-block max-w-[1100px] w-full">
+
+        <!-- Obyn -->
+        <div class="flex md:flex-row flex-col md:space-x-12 md:space-y-0 justify-center items-center space-y-12 max-w-[1100px]">
+            <img src="./images/obyn.webp" alt="Obyn Greenfoot, guardián de los bosques" class="w-full min-w-[300px]"> 
+            <div class="flex flex-col mx-12">
+                <h3 class="text-center md:text-left text-3xl text-orange-300 font-title mt-10 md:mt-0 mb-10">Obyn Greenfoot</h3> 
+                <p class="leading-8 md:text-xl text-lg hidden sm:block">
+                    Las fuerzas de la naturaleza son imparables. Cuando Obyn decide parar a un globo, lo hará invocando
+                    el poder más ancestral e indómita dentro del reino de los monos. ¡Los globos más pesados
+                    habrán deseado ser destruidos por un dardo antes que ser devorados por un bosque entero!
+                </p>
+            </div>
+        </div>
+
+        <hr class="border border-orange-300 rounded-full border-4 inline-block max-w-[1100px] w-full">
+
+        <!-- Adora -->
+        <div class="flex md:flex-row-reverse flex-col md:space-x-12 md:space-y-0 justify-center items-center space-y-12 max-w-[1100px]">
+            <img src="./images/adora.webp" alt="Obyn Greenfoot, guardián de los bosques" class="w-full min-w-[300px]"> 
+            <div class="flex flex-col mx-12">
+                <h3 class="text-center md:text-left text-3xl text-orange-300 font-title mt-10 md:mt-0 mb-10">Adora</h3> 
+                <p class="leading-8 md:text-xl text-lg hidden sm:block">
+                    Desde el principio de la vida en el planeta, el Sol ha sido una causa fundamental en brindar animosidad
+                    a todos sus habitantes. Pero, del mismo modo, es capaz de brindar la más pura e indiscriminada destrucción.
+                    Adora, avatar del Sol, quizás sea una de las tropas más poderosas en tu ejército.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
