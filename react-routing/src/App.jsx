@@ -7,15 +7,13 @@ import AboutUsPage from './pages/AboutUsPage'
 import TeamPage from './pages/TeamPage'
 import CreateUser from './pages/CreateUser'
 import EditUser from './pages/EditUser'
+import NavBar from './components/NavBar'
 
 const App = () => {
     return (
         <div>
             <h1>Demo Routing</h1>
-            <Link to="/">Home</Link> | 
-            <Link to="/login">Login</Link> | 
-            <Link to="/about">About</Link> | 
-            <Link to="/about/team">Team</Link>
+            <NavBar />
             <hr />
             <Routes>
                 <Route path="/" element={<HomePage />} />

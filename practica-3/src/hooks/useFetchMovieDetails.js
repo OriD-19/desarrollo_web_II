@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 export const useFetchMovieDetails = (selectedId) => {
     const API_KEY = "c4313e3d";
-    const API_URL = `http://www.omdbapi.com/?apikey=c4313e3d`;
+    const API_URL = `https://www.omdbapi.com/?apikey=c4313e3d`;
 
     const [movie, setMovie] = useState({});
     const [isLoading, setIsLoading] = useState(false);
